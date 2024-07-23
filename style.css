@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+}
+
+.container {
+    width: 70%;
+    margin-left: 20px;
+
+}
+
+select {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+}
+
+
+nav {
+    width: 80%;
+    background-color: white;
+    padding: 0.7rem 0.2rem;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar {
+    background-color: gainsboro;
+    border-radius: 1.3rem;
+    padding: 0.4rem 0.6rem;
+}
+
+
+.search-bar input[type="search"] {
+    background: transparent;
+    width: 20vw;
+    margin-left: 2rem;
+    font-size: 1rem;
+    color: black;
+
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(177, 51%, 73%, 0.9);
+    color: black;
+    width: 320px;
+    padding: 60px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.sidebar li.active {
+    background-color: hsl(177, 51%, 68%, 0.9);
+    border-radius: 20px;
+    margin-top: 150px;
+}
+
+.sidebar li {
+    margin-right: 20px;
+    height: 60px;
+}
+
+.Configuración {
+    margin-top: 90px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.text-oscuro {
+    font-size: 11px;
+    margin-top: 10px;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.dot-ange {
+    margin-left: 0;
+}
+
+
+.no-leidos {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 10px;
+    color: #555;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.no-leidos:hover {
+    background-color: hsl(0, 0%, 58%);
+    color: #333;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+select {
+    padding: 3px 2px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+}
+
+select:hover {
+    border-color: #888;
+}
+
+select {
+    margin: 0;
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+}
+
+select:focus {
+    border-color: hsl(88, 80%, 35%);
+    box-shadow: 0 0 10px rgba(138, 250, 46, 0.952);
+}
+
+main {
+    display: flex;
+    width: calc(79.8%);
+    padding: 9px;
+}
+
+main section {
+    flex: 1em;
+    margin-top: 9%;
+}
+
+
+main section {
+    border-right: 1px solid #075E54;
+
+}
+
+main section h2 {
+    padding-bottom: 10px;
+    margin-left: 250px;
+}
+
+.text-calls {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+
+}
+
+.call-list,
+.community-list,
+.chat-list {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.call-item,
+.community-item,
+.chat-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 11px;
+    padding: 20px;
+    border-bottom: 1px solid #075E54;
+}
+
+.switch-comunity {
+    margin-left: 50px;
+    padding-top: -70px;
+}
+
+
+.comunidad h2 {
+    margin-left: 230px;
+}
+
+.community-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 18px;
+    border-bottom: 1px solid #075E54;
+}
+
+.community-info {
+    flex: 1;
+    margin-left: 2px;
+    text-align: right;
+    padding: 2px;
+    font-size: small;
+}
+
+.community-title {
+    margin-bottom: 2px;
+}
+
+.message-container {
+    padding: 2px;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.text-community {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.community-list {
+    margin-top: 0;
+}
+
+
+.avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.call-info,
+.community-info,
+.chat-info {
+    flex: 1;
+    margin-left: 5px;
+    text-align: right;
+    padding: 2px;
+    font-size: small;
+}
+
+.text-comunity {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.call-icons {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+
+
+.call-icons img {
+    margin-left: 10px;
+    cursor: pointer;
+    height: 19px;
+    width: 17x;
+
+}
+
+.chat-list {
+    margin-top: 0;
+}
+
+.time {
+    font-size: 0.8em;
+    color: grey;
+    margin-right: 10px;
+}
+
+
+
+
+.footer {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 81px;
+    border-top: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-style: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text-footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

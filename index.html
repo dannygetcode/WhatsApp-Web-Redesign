@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Web</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/recursos/icon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <img width="32" height="32" src="https://img.icons8.com/windows/32/12B886/whatsapp--v1.png"
+                alt="whatsapp--v1" />
+            <h2 class="title">WhatsApp Web</h2>
+            <form action="#">
+                <select name="Seleccionar" id="lang">
+                    <option value="Chats">Chats</option>
+                    <option value="Comunidad">Comunidad</option>
+                    <option value="LLamadas">LLamadas</option>
+                </select>
+            </form>
+            <div class="search-bar">
+                <img width="25" height="25"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAChklEQVR4nO2Zu24TQRSGPxeElgYbEVIYHoECCJdXQAIH+YKECA+AxEVESAl0wAsgUUEKpCiiIDFKDYGGS96AhhZSBZGQ2MFwpH+lKQxi8czYu+wnjbTy5f/3jPecOTOGgoKR5AAwDcwDa8A6sKPxBfig9y4DFUaQM0Ab6AC9vxz22WXgNCPAEWDFubku8Aq4BhwDysAeDbs+DlwHVvXZ5HsvgMPDCqIFfNWNfAPuAftTfN8Cuw9sSmMDaBCZOWc2F4DxAbQOAYuO3iyRuCvDH7ouedK9CuzGCqYlIzOsBdCfcoKpEzCxk5y4FcoEmHFyphrCYMXJiZCUnJxph1gneqowE4RnXJWwB5zyKdyWqJXYWFhpNs8ln21HRwtYmnViUGyd6aq9seuBuaKZeUl8Xsv7kg+xeYlZ2xGbG/J+7ENsTWLWO8VmUt7vfIitSyxmfiRU5P3Zh9i2xMaIz155f89LIBt5ebQ++kx22xTF5qS8rQznovw+8iE2LTHbnsbmjbzP+XpOkxbFS6uQskXpAPt8iS5rZqyRi8UDeVpL740TEt0aQht/1Ld425khX/v0fpj2M3k9D2FQ1cLU03Y0FLflYSeTB0OZNJzDBzso8M0F5/DhLIGZdYKZ8fSYlfRLJEHs6sSGWMEkOWOHbP/KhJMT7rDS2yQCdSdnNlWa06wzZZXYLacx7PYJpkEEqk41S4xX1VpMajEd06jotZvqndybXlBiN4cZDDqyWUr5t4JtD572aUZ/F0ydiJR1UPAEeK8Suq3F7RPwFniom/rTtqAxCsH4wsp7p08wF8lRMC0yyFSegqn9D8E0yWgwO0UwGSkAc2SU885jdoeMU4v5d3ZBwa8Z+Ak4rhMJLuUtjQAAAABJRU5ErkJggg==">
+                <input type="search" placeholder="Buscar">
+            </div>
+            <img width="35" height="35" src="https://img.icons8.com/material-sharp/24/1A1A1A/camera--v1.png"
+                alt="camera--v1" />
+
+        </div>
+    </nav>
+
+    <nav class="sidebar">
+        <ul>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+                <h5 class="text-oscuro">Oscuro</h5>
+            </label>
+            <img style="border-radius: 50%; margin-top: -175px; margin-left: 130px;" width="65" height="65"
+                src="recursos/photo-icon.png" alt="Foto-de-Perfil">
+            <li class="active"><img width="30" height="30"
+                    src="https://img.icons8.com/glyph-neue/64/1A1A1A/home--v1.png"
+                    alt="home--v1" />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHome</li>
+            <li><img width="30" height="30"
+                    src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/1A1A1A/external-user-networking-tanah-basah-glyph-tanah-basah.png"
+                    alt="external-user-networking-tanah-basah-glyph-tanah-basah" />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAgregar
+                Contacto</li>
+            <li><img width="30" height="30" src="https://img.icons8.com/material-rounded/24/1A1A1A/wallet.png"
+                    alt="wallet" />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPagos</li>
+            <li class="Configuración"><img width="30" height="30"
+                    src="https://img.icons8.com/material-rounded/24/1A1A1A/settings.png"
+                    alt="settings" />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspConfiguración</li>
+            <li class="Cerrar-sesion"><img width="30" height="30"
+                    src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/1A1A1A/external-log-in-arrows-pack-tanah-basah-basic-outline-tanah-basah-2.png"
+                    alt="external-log-in-arrows-pack-tanah-basah-basic-outline-tanah-basah-2" />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCerrar
+                Sesión</li>
+        </ul>
+    </nav>
+
+
+
+
+    <!-- aqui hacia abajo es el main lo que va en llamadas, comunidad y chats-->
+
+
+    <main>
+        <section class="llamadas">
+            
+            <h2 ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABVklEQVR4nK2VzytEURTHP8SUJomV1WhYalJKsWCjlJGFjZEV/4ONslHKxkJZjvIP2CMrYmNPsbIgK7NgYeHH6NZJt5tz3n3d962zuK/zvp937zn3PMjWAdD+Jz6AKRJVAT4VgIvlVMCeYd4CelLMO4FnA7Cf+vUzhrmL0VTAjmL8AxxmvDsJlLIAZ57pNdAv0RvxcUdA00rokCK2JbbIpzLwAMxqCX3BsSxGmM4Dw956FTjVkqsBYCwCsA5cBbt405LHA0A1AuCO9QUY9J7da8kTAaBCnB6BIW99qyWOBIBahHkduPPWJeuIBgLAXARgTXbuA117q2Pi3QNskE9dwA3QsJIuPIDabop2gRMpfNQk/ZaL15JO2cwArMitN1U3Bt1Xjs5S1Q28GpBtClDTADxJMZNUk/GsQRaK2MWx8V9wdUqW64bLwPwcmC7C3Je7pUuRg+9Pv3T0jrkNYR1+AAAAAElFTkSuQmCC">&nbsp&nbsp&nbspLlamadas</h2>
+            <div class="call-list">
+
+                <!-- Aqui se encuentra el section de llamadas -->
+
+                <div class="call-item">
+                    <div class="call-icons">
+                        <img src="recursos/phone-icon.png" alt="Llamada">
+                        <img src="recursos/video-icon.png" alt="Videollamada">
+                        <p>&nbsp&nbsp&nbsp&nbsp</p>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO3ZvyvFcRTG8fefIJNImfwDSpEysNySicFiUfJXSBZ3kMEislgoWSwoE8ng14x/hTw6dYY7urf0Ped2XvXsz9O5dT+3C6WUUkrJQzAoOBIskHzEq0CCUzISDAiefMSnYIRsVCOCUF0iCNUlgqhLRFGXiKIuEUU/XeK5n0Z8NDpCMCSY7PFH0ZuPeBcM/0/DPxLcCH4E42lHGMGjF5qit49T8yOM4M5LzZJ1hBHcerF5so4wgisv1yLrCCO49IKLZB1hBBdecomsI4zgzIuukHWEEZx42dW0I4zg2AuvpR1hBAdeeiPtCCPY9+KbaUcYwa6X/wr1duqWYMcHWL4FW4J1wXJHWvbN75kRTHjGiEKw3TGk29ireZoIBHOCtmBPcOixf5DOO3LtbzLLg+DFcy8YbXpDKaUQxi/1GYaoLrbTaAAAAABJRU5ErkJggg==">
+                    </div>
+
+
+                    <div class="call-info">
+                        <p>Angélica Estupiñán</p>
+                        <p class="text-calls"><br>Hoy, 9:12 am</p>
+                    </div>
+                    <img src="recursos/angelica_estupinan.png" class="avatar">
+                </div>
+
+                <div class="call-item">
+                    <div class="call-icons">
+                        <img src="recursos/phone-icon.png" alt="Llamada">
+                        <img src="recursos/video-icon.png" alt="Videollamada">
+                        <p>&nbsp&nbsp&nbsp&nbsp</p>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR4nO3ZIUsEQRQH8KfglzBbLMLem/W9vaCiCBZBEL+AQUxW0WIQxGxQLyg6M3tYLBaLyWKxWCwKfgkNppHZmzsuigbnyfvBSzsL++c/C7MsgFJKKSUAdnDMON43jk6M48Oh2cWatpvxtGVq2mjGVetYV2v9KS5pEnKAjlvGc/j50CnkAm21gp43Bw3EcXQwaMfTETruxDGeLozjz34Q9HwO4gQYabbgUCPo2IIoezCKns5SgHfj+DgFuQKhTXy07PS8sbSaglyD1BAAAKbm5V4QugGpIaLS8lLvZadbkBoiKl21kILcgdQQUemrmXT9HqSGiMq6XaU1DyA1RNSqCZt1jh9Baoio6NJUCvIEUkNE8bCY1j+D1BBRYXmi1wi9Qm7HDnQ0991bi257PJ1+X0BqiL74fYKWFkHadsqLhsiFNpGLoC92JoI2kYmgTWQiaBOZCNpEJsJ/aAIAjOed33wUZcPEP0eO30zNs3/9LEoppSA3Xzv1kkPWD1orAAAAAElFTkSuQmCC">
+                    </div>
+                    <div class="call-info">
+                        <p>Ing. Daniel Fernando</p>
+                        <p class="text-calls"><br>Ayer, 11:00 am</p>
+                    </div>
+                    <img src="recursos/ing_daniel_fernando.png" class="avatar">
+                </div>
+
+                <div class="call-item">
+                    <div class="call-icons">
+                        <img src="recursos/phone-icon.png" alt="Llamada">
+                        <img src="recursos/video-icon.png" alt="Videollamada">
+                        <p>&nbsp&nbsp&nbsp&nbsp</p>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO3ZvyvFcRTG8fefIJNImfwDSpEysNySicFiUfJXSBZ3kMEislgoWSwoE8ng14x/hTw6dYY7urf0Ped2XvXsz9O5dT+3C6WUUkrJQzAoOBIskHzEq0CCUzISDAiefMSnYIRsVCOCUF0iCNUlgqhLRFGXiKIuEUU/XeK5n0Z8NDpCMCSY7PFH0ZuPeBcM/0/DPxLcCH4E42lHGMGjF5qit49T8yOM4M5LzZJ1hBHcerF5so4wgisv1yLrCCO49IKLZB1hBBdecomsI4zgzIuukHWEEZx42dW0I4zg2AuvpR1hBAdeeiPtCCPY9+KbaUcYwa6X/wr1duqWYMcHWL4FW4J1wXJHWvbN75kRTHjGiEKw3TGk29ireZoIBHOCtmBPcOixf5DOO3LtbzLLg+DFcy8YbXpDKaUQxi/1GYaoLrbTaAAAAABJRU5ErkJggg==">
+                    </div>
+                    <div class="call-info">
+                        <p>Ing. Jhon Esteban</p>
+                        <p class="text-calls"><br>Ayer, 08:37 am</p>
+                    </div>
+                    <img src="recursos/jhon_esteban.png" class="avatar">
+                </div>
+
+                <div class="call-item">
+                    <div class="call-icons">
+                        <img src="recursos/phone-icon.png" alt="Llamada">
+                        <img src="recursos/video-icon.png" alt="Videollamada">
+                        <p>&nbsp&nbsp&nbsp&nbsp</p>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR4nO3ZIUsEQRQH8KfglzBbLMLem/W9vaCiCBZBEL+AQUxW0WIQxGxQLyg6M3tYLBaLyWKxWCwKfgkNppHZmzsuigbnyfvBSzsL++c/C7MsgFJKKSUAdnDMON43jk6M48Oh2cWatpvxtGVq2mjGVetYV2v9KS5pEnKAjlvGc/j50CnkAm21gp43Bw3EcXQwaMfTETruxDGeLozjz34Q9HwO4gQYabbgUCPo2IIoezCKns5SgHfj+DgFuQKhTXy07PS8sbSaglyD1BAAAKbm5V4QugGpIaLS8lLvZadbkBoiKl21kILcgdQQUemrmXT9HqSGiMq6XaU1DyA1RNSqCZt1jh9Baoio6NJUCvIEUkNE8bCY1j+D1BBRYXmi1wi9Qm7HDnQ0991bi257PJ1+X0BqiL74fYKWFkHadsqLhsiFNpGLoC92JoI2kYmgTWQiaBOZCNpEJsJ/aAIAjOed33wUZcPEP0eO30zNs3/9LEoppSA3Xzv1kkPWD1orAAAAAElFTkSuQmCC">
+                    </div>
+                    <div class="call-info">
+                        <p>Ing. Sara Savedra</p>
+                        <p class="text-calls"><br>Lunes, 03:15 pm</p>
+                    </div>
+                    <img src="recursos/ing_sara_savedra.png" class="avatar">
+                </div>
+
+
+                <!-- Aqui Termina el section de llamadas -->
+
+
+            </div>
+        </section>
+
+        <section class="comunidad">
+            
+            <h2>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA/klEQVR4nO2SQU7CYBCFv6QEtmXhUjwCnkMWhBvgFXDpDZQDKBviEm9gy9pwAm+AWww1Kbuamtek/cP/12qJgfQlk3Qm772ZvzPQ4FjQBWbAO7AGHgG/LvMWsAISI9KaV0eDwR7zLK6qGF0AS+ATCIGe6jeOBpMSbQFLQxxUeIFNW0BkkLaqe5YdvOZ2YNMWEDqm8HU5a8WDcUUubWEHgaZ5sf1HC/6iPSzOgGvgGXjThJG+F8BYnFKcA1PgVnlH+c5xQVnEwJ00yONent8Y6X5Tcl+1px8YJ0bMpb1UnnoO08JHjtQWKf5Fg1jadq62wSBlqGqeOPQn0KDB/+ILWqvARy6OrLkAAAAASUVORK5CYII=">&nbsp&nbsp&nbsp&nbspComunidad
+            </h2>
+            
+            <div class="switch-comunity">
+            <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                    <h5 class="text-oscuro">Grupos</h5>
+            </label>
+            <button class="no-leidos">No Leídos</button>
+            </div>
+
+
+            <div class="community-list">
+
+                <!-- Aqui se encuentra el Section de Comunidad -->
+
+                <div class="community-item">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABXUlEQVR4nNWTvUoDQRDHr1EbLRTERm8nR0A4Y6U+jQ9hYSc2PoCSw3PGI8EH8AFs/AKV3EwQC3NpbEUUxCZaxg82iUG83eSuzMC0v9nf/GcdZ2TLq0XLiikApgQYP7pNiRIse3UsZQYVH4IJYEJg+gShb3NjG4RCPzkeHw4TurCDUn0+EAqMlAPWaSW4b92ZUZPpGQSrIHSkGF9N+gsSLqWAetmG6Y/ztcpMoX6wpoMoxJU5C3QvrSvYNCjFSnATGL9A8K07mK5Sg5kaphe2BqS67cnhqiu03kv4v0krF1AJRRDThnuN04pRMgHBpMx0ohi3esrt4l0wqwR3siqXDapN/zKc1CnqK1i8qU4pwftMoXh1LJn2A0JP/bMRfDGdjcvkG29Rf6fch80UOLbS3wgYz3LATlduozEr8Beqv5NFv6+pXzYU5vwpHYRetk5QCb13mqkBjLvWnY1E/QDzZgRYLlobSAAAAABJRU5ErkJggg==">
+                    <p class="time">8:16 pm</p>
+                    <div class="community-info">
+                        <p class="comunity-title">Administración de Vivienda</p>
+                        <div class="message-container">
+                            <p class="text-community"><strong>Sr Juan: van a subir el precio de la administración</strong></p>
+                        </div>
+                    </div>
+                    <img src="recursos/casa.png" alt="Administración de Vivienda" class="avatar">
+                </div>
+
+                <div class="community-item">
+                    <p class="time">12:15 pm</p>
+                    <div class="community-info">
+                        <p>Patas Caninas</p>
+                        <p class="text-comunity">Sra Maria: quiero comprar la comidad de mi perro</p>
+                    </div>
+                    <img src="recursos/mascota.png" alt="Patas Caninas" class="avatar">
+                </div>
+
+                <div class="community-item">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABXUlEQVR4nNWTvUoDQRDHr1EbLRTERm8nR0A4Y6U+jQ9hYSc2PoCSw3PGI8EH8AFs/AKV3EwQC3NpbEUUxCZaxg82iUG83eSuzMC0v9nf/GcdZ2TLq0XLiikApgQYP7pNiRIse3UsZQYVH4IJYEJg+gShb3NjG4RCPzkeHw4TurCDUn0+EAqMlAPWaSW4b92ZUZPpGQSrIHSkGF9N+gsSLqWAetmG6Y/ztcpMoX6wpoMoxJU5C3QvrSvYNCjFSnATGL9A8K07mK5Sg5kaphe2BqS67cnhqiu03kv4v0krF1AJRRDThnuN04pRMgHBpMx0ohi3esrt4l0wqwR3siqXDapN/zKc1CnqK1i8qU4pwftMoXh1LJn2A0JP/bMRfDGdjcvkG29Rf6fch80UOLbS3wgYz3LATlduozEr8Beqv5NFv6+pXzYU5vwpHYRetk5QCb13mqkBjLvWnY1E/QDzZgRYLlobSAAAAABJRU5ErkJggg==">
+                    <p class="time">10:00 am</p>
+                    <div class="community-info">
+                        <p>Programadores</p>
+                        <p class="text-comunity"><strong>Ing Daniel: ya vieron el nuevo framework?</strong></p>
+                    </div>
+                    <img src="recursos/dev.png" alt="Programadores" class="avatar">
+                </div>
+                <div class="especial-comida">
+                    <div class="community-item">
+                        <p class="time">Hoy</p>
+                        <div class="community-info">
+                            <p>Comida Asiática</p>
+                            <p class="text-comunity">José: Ayer probé los fideos de japón, estaban un poco picantes</p>
+                        </div>
+                        <img src="recursos/food.png" alt="Programadores" class="avatar">
+                    </div>
+                </div>
+
+                <!-- Aqui termina el Section de Comunidad -->
+
+            </div>
+        </section>
+
+        <section class="chats">
+            <h2>
+            <img width="25" height="25" src="https://img.icons8.com/ios-filled/50/speech-bubble-with-dots.png" alt="speech-bubble-with-dots"/>&nbsp&nbsp&nbsp&nbsp&nbspChats
+            </h2>
+            <div class="switch-comunity">
+                <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                        <h5 class="text-oscuro">Estados</h5>
+                </label>
+                <button class="no-leidos">No Leídos</button>
+                </div>
+            <div class="chat-list">
+
+
+                <!-- Aqui se encuentra el Section Chat -->
+
+                <div class="community-item">
+                    <p class="time">3:24 pm</p>
+                    <div class="community-info">
+                        <p>Ing. Jhon Esteban</p>
+                        <p class="text-comunity">Mañana es la Reunión a las 6 pm, porfavor no olvides el commit</p>
+                    </div>
+                    <img src="recursos/jhon_esteban.png" alt="Ing. Jhon Esteban" class="avatar">
+                </div>
+
+
+                <div class="community-item">
+                    <p class="time">Hoy</p>
+                    <div class="community-info">
+                        <p>Sara Rodríguez</p>
+                        <p class="text-comunity">Seria bueno que pases a recoger la caja en la noche</p>
+                    </div>
+                    <img src="recursos/sara.png" alt="Sara Rodríguez" class="avatar">
+                </div>
+
+                <div class="community-item">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABXUlEQVR4nNWTvUoDQRDHr1EbLRTERm8nR0A4Y6U+jQ9hYSc2PoCSw3PGI8EH8AFs/AKV3EwQC3NpbEUUxCZaxg82iUG83eSuzMC0v9nf/GcdZ2TLq0XLiikApgQYP7pNiRIse3UsZQYVH4IJYEJg+gShb3NjG4RCPzkeHw4TurCDUn0+EAqMlAPWaSW4b92ZUZPpGQSrIHSkGF9N+gsSLqWAetmG6Y/ztcpMoX6wpoMoxJU5C3QvrSvYNCjFSnATGL9A8K07mK5Sg5kaphe2BqS67cnhqiu03kv4v0krF1AJRRDThnuN04pRMgHBpMx0ohi3esrt4l0wqwR3siqXDapN/zKc1CnqK1i8qU4pwftMoXh1LJn2A0JP/bMRfDGdjcvkG29Rf6fch80UOLbS3wgYz3LATlduozEr8Beqv5NFv6+pXzYU5vwpHYRetk5QCb13mqkBjLvWnY1E/QDzZgRYLlobSAAAAABJRU5ErkJggg==">
+                    <p class="time">Ayer</p>
+                    <div class="community-info">
+                        <p>Jefe Jaime Eduardo</p>
+                        <p class="text-comunity"><strong>Realiza los despliegues, a mas tardar para el martes</strong></p>
+                    </div>
+                    <img src="recursos/jaime.png" alt="Jefe Jaime Eduardo" class="avatar">
+                </div>
+
+
+                <div class="community-item">
+                    <p class="time">8:32 pm</p>
+                    <div class="community-info">
+                        <p>Angélica Estupiñán</p>
+                        <p class="text-comunity">estoy segura de que el proyecto va a salir adelante</p>
+                    </div>
+                    <img src="recursos/angelica_estupinan.png" alt="Angélica Estupiñán" class="avatar">
+                </div>
+            </div>
+        </section>
+                <!-- Aqui se Termina el Section Chat -->
+
+    </main>
+
+    <footer class="footer">
+        <p class="text-footer">
+            <img width="21" height="21" src="https://img.icons8.com/fluency/48/meta.png" alt="meta"/>
+            &nbsp&nbsp Meta Platforms
+            
+        </p>
+    </footer>
+
+</body>
+</html>
